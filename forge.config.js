@@ -10,7 +10,15 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        setupIcon: './icon.ico', 
+        setupExe: 'SuzuNoShioriSetup.exe',
+        noMsi: true,
+        shortcutName: 'Suzu no Shiori',
+        createDesktopShortcut: true,
+        createStartMenuShortcut: true,
+        shortcutFolderName: 'Suzu no Shiori',
+      },
     },
     {
       name: '@electron-forge/maker-zip',
