@@ -1,0 +1,174 @@
+/* Adding the font */
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url('../fonts/PixelifySans-Regular.ttf');
+  font-weight: 400;
+}
+input,button , .close-app, .js-start-timer, .navigate-to-tasks, .js-display-task-container, .js-delete-task {
+  -webkit-app-region: no-drag;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Pixelify Sans';
+}
+.title, .date {
+  color: #E1BCA9;
+}
+.task-name-input , .starting-time-input, .ending-time-input ::placeholder {
+  color: black;
+}
+.app-window {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 5px;
+  -webkit-app-region: drag;
+  background-image: url('../images/spirited_away_pixel_art_study_by_jessbits_depxtyw-fullview.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.title-bar-grid {
+  padding: 5px 5px;
+  display: grid;
+  grid-template-columns: 15fr 1fr 1fr;
+}
+.set-time-box{
+  background-position: left;
+  transform: translateX(-83.6px);
+  overflow: none;
+  width: 313.6px;
+  height: 110px;
+}
+.set-time-container {
+  transform: translateX(83.6px);
+}
+.task-name{
+  padding: 8px 0px 0px 5px;
+}
+.starting-time {
+  padding-left: 5px;
+  margin-top: -3px;
+}
+.ending-time {
+  margin-top: -5px;
+  padding-left: 5px;
+}
+.task-name-input, .starting-time-input, .ending-time-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: Pixelify Sans;
+  font-size: 16px;
+  width: 100px;
+}
+.total-time-box {
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  transform: translateX(10px);
+  padding: 15px;
+  text-align: center;
+}
+
+.bottom-section {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center;
+}
+
+.add-task-button {
+  cursor: pointer;
+  width: 90px;
+  padding: 15px;
+  margin-bottom: -10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.date {
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+  font-family: 'Pixelify Sans';
+}
+
+.set-time-box, .total-time-box, .add-task-button, .display-tasks-container{
+  background-image: url('../images/CheckingSign.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.close-app {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  z-index: 10;
+}
+.stop-showing {
+  visibility: hidden;
+}
+.navigation-close{
+  rotate: 180deg;
+  margin-right: 5px;
+}
+
+.task-name-date p {
+  padding: 0;
+}
+.task-name-date {
+  display: flex;
+}
+
+.task-total-time {
+  margin-top: -20px;
+}
+.task {
+  width: 300px;
+  padding: 0;
+  margin-bottom: -10px;
+}
+.container-title {
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+.display-tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Horizontal center */
+  justify-content: flex-start; /* Optional: top-aligned */
+  width: 100%;
+  gap: 10px; /* space between tasks */
+  margin-top: 45px;
+}
+.js-display-task-container {
+  overflow-y: auto;
+  max-height: 100px;
+  min-height: 100px;
+  scrollbar-width: none;
+  margin-top: -10px;
+  -ms-overflow-style: none;
+}
+.delete-task img{
+  width: 20px;
+  height: 20px;
+}
+.delete-task {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+

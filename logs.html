@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>My App</title>
+</head>
+<body>
+  <div class="app-window">
+    <div class="title-bar-grid">
+      <div class="title font-size">Suzu no Shiori</div>
+      <a href="index.html" class="navigate-to-tasks navigation-close">
+        <div><img src="images/icons/menuIcon.png" alt="menu"></div>
+      </a>
+      <div class="js-close-application close-app"><img src="images/icons/closeIcon.png" alt="close App icon"></div>
+    </div>
+    <div class="main main-logs">
+      <div class="display-tasks-container">
+        <div class="container-title">Complited tasks:</div>
+        <div class="js-display-task-container"></div>
+        <audio class="js-delete-task-sound" src="sound_effects/delete-task.mp3"></audio>
+      </div>
+    </div>
+  </div>
+  <script src="log.js"></script>
+</body>
+</html>

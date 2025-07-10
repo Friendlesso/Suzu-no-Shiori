@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>My App</title>
+</head>
+<body>
+  <div class="app-window">
+    <div class="title-bar-grid">
+      <div class="title font-size">Suzu no Shiori</div>
+      <a href="logs.html" class="navigate-to-tasks">
+        <div><img src="images/icons/menuIcon.png" alt="menu"></div>
+      </a>
+      <div class="js-close-application close-app"><img src="images/icons/closeIcon.png" alt="close App icon"></div>
+    </div>
+    <div class="main">
+      <div class="total-time-box js-total-time-box">
+
+      </div>
+      <div class="set-time-box">
+        <div class="set-time-container">
+          <p class="task-name">Task name: <input type="text" class="task-name-input js-name-input" placeholder="..."></p>
+          <p class="starting-time">Starting time:<input type="text" class="starting-time-input js-starting-time"  placeholder="..."></p>
+          <p class="ending-time">Ending time:<input type="text" class="ending-time-input js-ending-time" placeholder="..."></p>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <audio class="audio" src="sound_effects/buttonSound.mp3"></audio>
+        <div class="add-task-button js-start-timer">Add a task!</div>
+        <div class="date js-date"></div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
